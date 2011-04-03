@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<deployments>
+	<deployment>
+		<instance>
+			<instance-id>HelloWorldInstance</instance-id>
+			<portlet-ref>HelloWorldController</portlet-ref>
+		</instance>
+	</deployment>
+</deployments>

@@ -1,0 +1,5 @@
+#surefire
+#Sun Apr 03 13:23:29 EDT 2011
+user.dir=/Users/jeffhoover/projects/amber/learn-maven
+localRepository=/Users/jeffhoover/.m2/repository
+basedir=/Users/jeffhoover/projects/amber/learn-maven
