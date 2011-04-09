@@ -11,7 +11,6 @@ public class HelloWorldController extends GenericPortlet {
 	@Override
 	protected void doView(RenderRequest request, RenderResponse response)
 			throws PortletException, IOException {
-getPortletContext().getRequestDispatcher("").include(request,response); // TODO: empty string needs full path of .jsp
+getPortletContext().getRequestDispatcher("/WEB-INF/jsp/HelloWorld.jsp").include(request,response);
 	}
-
 }

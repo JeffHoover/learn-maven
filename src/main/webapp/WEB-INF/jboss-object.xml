@@ -23,4 +23,17 @@
 			</page>
 		</portal>
 	</deployment>
+	<deployment>
+		<parent-ref>HelloWorldPortal</parent-ref>
+		<if-exists>overwrite</if-exists>
+		<page>
+			<page-name>HelloWorld</page-name>
+			<window>
+				<window-name>HelloWorldWindow</window-name>
+				<instance-ref>HelloWorldInstance</instance-ref>
+				<region>center</region>
+				<height>0</height>
+			</window>
+		</page>
+	</deployment>
 </deployments>
