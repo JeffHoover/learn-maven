@@ -3,43 +3,4 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_4.xsd">
 
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:big-context-ui.xml</param-value>
-	</context-param>
-
-	<listener>
-		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener>
-
-	<servlet>
-		<servlet-name>SystemHealth</servlet-name>
-		<servlet-class>com.gale.bi.global.servlet.WebSystemHealthServlet</servlet-class>
-		<init-param>
-			<param-name>htmlForward</param-name>
-			<param-value>/WEB-INF/jsp/systemHealth.jsp</param-value>
-		</init-param>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>SystemHealth</servlet-name>
-		<url-pattern>/systemHealth</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>ViewRendererServlet</servlet-name>
-		<servlet-class>org.springframework.web.servlet.ViewRendererServlet</servlet-class>
-	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>ViewRendererServlet</servlet-name>
-		<url-pattern>/WEB-INF/servlet/view</url-pattern>
-	</servlet-mapping>
-	
-	<jsp-config>
-		<taglib>
-			<taglib-uri>http://gale.com/galeportlet</taglib-uri>
-			<taglib-location>/WEB-INF/tld/galeportlet.tld</taglib-location>
-		</taglib>
-	</jsp-config>
 </web-app>
